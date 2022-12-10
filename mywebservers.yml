@@ -8,17 +8,17 @@
       state: present
 
   - name: i want to start webserver on ubuntu
-    apt: 
+    service: 
       name: "{{mywebpackonubuntu}}"
       state: started
 
   - name: i want to install webserver on RedHat
-    apt: 
+    yum: 
       name: "{{mywebpackonRedHat}}"
       state: present
 
   - name: i want to install webserver on RedHat
-    apt: 
+    service: 
       name: "{{mywebpackonRedHat}}"
       state: started           
       
