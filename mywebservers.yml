@@ -1,0 +1,24 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks: 
+  - name: i want to install webserver on ubuntu
+    apt: 
+      name: "{{mywebpackonubuntu}}"
+      state: present
+
+  - name: i want to start webserver on ubuntu
+    apt: 
+      name: "{{mywebpackonubuntu}}"
+      state: started
+
+  - name: i want to install webserver on RedHat
+    apt: 
+      name: "{{mywebpackonRedHat}}"
+      state: present
+
+  - name: i want to install webserver on RedHat
+    apt: 
+      name: "{{mywebpackonRedHat}}"
+      state: present           
+      
