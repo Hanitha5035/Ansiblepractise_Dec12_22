@@ -2,4 +2,4 @@
 
 
 mywebpackonubuntu: apache2
-mywebpackonRedHat: httpd
+mywebpackonredhat: httpd
